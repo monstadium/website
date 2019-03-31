@@ -1,0 +1,307 @@
+@import url(//db.onlinewebfonts.com/c/5f81cce6bdf565e42056ab354b37b83c?family=Charlemagne+Std);
+@import url(//db.onlinewebfonts.com/c/fe9c236a1c142788cb16ec5238c7833e?family=Minion+Pro);
+@import url(//fonts.googleapis.com/css?family=Poppins);
+
+*
+    margin 0
+    padding 0
+
+body
+    height 3000px
+    font-family "Minion Pro"
+
+h1, h2, h3, h4, h5, h6
+    font-family "Charlemagne Std"
+
+a
+    color #ffd49c
+
+#header_video
+    //background url("../images/ms/Image 1.png") no-repeat
+    //background-size cover
+    //opacity .5
+    //max-height 100vh
+    //width 1280px
+    //height 1580px
+
+    //background-image url("../images/ms/Image 1.png")
+    //background-repeat no-repeat
+    //background-position center
+    //background-size cover
+    //height 100vh
+    position relative
+    padding-bottom 150px
+
+    .bg
+        height 100%
+        width 100%
+
+    .logo
+        position absolute
+        z-index 50
+        top 85px
+        left 0
+        right 0
+        height 500px
+        //left 50%
+        margin 0 auto
+
+    //text-align center
+
+    .highlight
+        position absolute
+        z-index 1
+        top 450px
+        left 0
+        right 0
+        background linear-gradient(to bottom, rgba(128, 7, 98, 0.86), rgba(128, 7, 98, 1))
+        height 500px
+
+    .button-holder
+        position absolute
+        z-index 50
+        top 500px
+        width 100%
+        text-align center
+
+        button
+            color #ffd49c !important
+            font-family "Poppins"
+
+    .subtext
+        padding-top 70px
+        width 500px
+        margin 0 auto
+        color white
+
+    .social
+        //border-top 1px solid white
+        //border-bottom 1px solid white
+
+        .padded
+            padding 20px 0
+            width 960px
+            margin 20px auto
+
+
+        .highlight_text
+            font-size 24px
+            color #ffd49c
+            padding-bottom 0
+
+            // Line on top
+            border-style solid
+            border-width 0
+            border-top-width 1px
+            border-image:
+                linear-gradient(4deg, rgba(0,0,0,0), rgba(0,0,0,0), rgba(239, 239, 239, 0.55)) 1 1%;
+
+
+        .icons
+
+            // Line on bottom
+            border-style solid
+            border-width 0
+            border-bottom-width 1px
+            border-image:
+                linear-gradient(-172deg, rgba(0,0,0,0), rgba(0,0,0,0), rgba(239, 239, 239, 0.55)) 1 1%;
+
+            .icon
+                font-size 32px
+                padding 0 40px
+
+            .facebook
+                color #3b5998
+            .twitter
+                color #1da1f2
+            .discord
+                color #7289da
+            .instagram
+                color #405de6
+            .reddit
+                color #ff4500
+
+
+#sub_header_video
+    position relative
+    z-index 1
+    height 52px  // Lines up with bottom edge of header purple highlight
+    width 100%
+    text-align center
+
+    .try_demo
+        position absolute
+        left 20px
+
+    .support_patreon
+        position absolute
+        top 0
+        right 20px
+
+        // To make patreon logo align vertically
+        display flex
+
+        img
+            margin-left 10px
+            height 45px
+
+    .mini_logo
+        margin-top -45px
+        width 300px
+
+
+#carousel
+    background-image url(../images/ms/carousel-background.png)
+    background-color #f8ebd2
+    background-size cover
+    background-position-y -100px
+    background-repeat no-repeat
+    height 750px
+    text-align center
+
+    h1
+        padding-top 125px
+        color #820165
+
+    .arrow
+        margin-bottom 50px
+        display inline-block
+        width 153px
+        height 93px
+        transition all 100ms ease-in
+
+        img
+            margin-bottom 22px  // to make it line up vertically... should be using flexbox..
+
+        &:hover
+            //transform translateX(20)
+            cursor pointer
+
+            &.left
+                transform translateX(-10px)
+            &.right
+                transform translateX(10px)
+
+    .selection span
+        font-size 25px
+        font-family monospace // makes active/inactive consistent sizes
+        color #653803
+
+        &:hover
+            cursor pointer
+
+        &:after
+            content "○"
+
+        &.active:after
+            content "●"
+
+
+    .component-holder
+        text-align center
+
+    .image-holder
+        display inline-block
+        width 400px
+        height 225px
+        border 2px solid #64380b
+        margin 0 auto
+
+        img
+            display none
+            height 100%
+            width 100%
+
+            &.active
+                display block
+
+    .caption
+        padding-top 75px
+        width 800px
+        margin 0 auto
+        line-height 1.5em
+
+
+#realm
+    position relative
+    //background-image url(../images/ms/tst.png)
+    height 568px
+    //background-size contain
+    //background-repeat no-repeat
+
+    text-align center
+
+    &:after
+        content ""
+        background url(../images/ms/tst.png)
+        background-size contain
+        background-repeat no-repeat
+        opacity 0.7
+        top 0
+        left 0
+        bottom 0
+        right 0
+        position absolute
+        z-index -1
+        
+    h1
+        color #ffd49c
+        padding-top 150px
+
+    p
+        padding-top 150px
+        width 800px
+        margin 0 auto
+        color #efefef
+
+#info_blocks
+    //background-color red
+    opacity .8
+    height 800px
+    display flex
+    flex-direction column
+
+
+    .first_block
+        background-color blue
+        width 100%
+        height 400px
+        display flex
+        flex-direction row
+        justify-content center
+
+        div
+            display flex
+            justify-content center
+            align-items center
+            margin 0 auto
+
+
+    .second_block
+        background-color purple
+        width 100%
+        height 400px
+        display flex
+        flex-direction row
+        justify-content center
+
+        div
+            display flex
+            justify-content center
+            align-items center
+            margin 0 auto
+
+//#background_reference
+//    position absolute
+//    top 0
+//    left 0
+//    right 0
+//    bottom 0
+//    //height 4550px
+//    width 100%
+//    height 3050px
+//    background url(../images/MSweb.png) no-repeat
+//    //background-position-x
+//    background-size cover
+
+
