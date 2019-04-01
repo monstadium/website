@@ -20,6 +20,11 @@ h6 {
 a {
   color: #ffd49c;
 }
+#wrapper {
+  max-width: 1365px;
+  width: 100%;
+  margin: 0 auto;
+}
 #header_video {
   position: relative;
   padding-bottom: 150px;
@@ -205,7 +210,8 @@ a {
 #realm:after {
   content: "";
   background: url("../images/ms/tst.png");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   opacity: 0.7;
   top: 0;
