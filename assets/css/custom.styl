@@ -9,6 +9,20 @@
 body
     height 3000px
     font-family "Minion Pro"
+    background-color #dbaf65
+
+    &::after
+        content " "
+        background-image url(../images/ms/leaves.png)
+        background-size auto
+        opacity 0.5
+        position fixed
+        z-index -1
+        top 0
+        left 0
+        right 0
+        bottom 0
+
 
 h1, h2, h3, h4, h5, h6
     font-family "Charlemagne Std"
@@ -20,6 +34,8 @@ a
     max-width 1365px
     width 100%
     margin 0 auto
+    border-right solid 2px tan
+    border-left solid 2px tan
 
 #header_video
     //background url("../images/ms/Image 1.png") no-repeat
@@ -233,6 +249,7 @@ a
     height 540px
     //background-size contain
     //background-repeat no-repeat
+    background-image linear-gradient(to bottom, #490000, 90%, #ff059b)
 
     text-align center
 
@@ -248,17 +265,22 @@ a
         bottom 0
         right 0
         position absolute
-        z-index -1
 
     h1
         color #ffd49c
         padding-top 150px
+        position relative
+        z-index 2
+        font-size 85px
+        text-shadow 0px 1px 2px #2c2c2c
 
     p
         padding-top 150px
         width 800px
         margin 0 auto
         color #efefef
+        position relative
+        z-index 2
 
 #info_blocks
     //background-color red
